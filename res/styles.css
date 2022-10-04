@@ -1,3 +1,7 @@
+@font-face {
+  font-family: garet;
+  src: url(res/garet-book.ttf);
+}
 @import  "//fonts.googleapis.com/css?family=Montserrat";
 
 html {
@@ -174,6 +178,7 @@ section {
 }
 
 h1 {
+  font-family: garet;
   font-size: 40px;
 }
 
@@ -206,6 +211,7 @@ h1 {
   }
 
   h1 {
+    font-family: garet;
     font-size: 60px;
   }
 }
@@ -216,6 +222,7 @@ h1 {
   }
 
   h1 {
+    font-family: garet;
     font-size: 75px;
   }
 }
