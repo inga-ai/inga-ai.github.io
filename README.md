@@ -1,2 +1,2 @@
-# inga-ai.github.io
+# inga-ai website
 Landing Page
