@@ -1,72 +1,52 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>inga.ai</title>
-    <meta name="description" content="Landing page for inga.ai, a causal AI startup" property="description">
-    <meta name="keywords" content="landing page, product page, startup, causal, artificial intelligence, insurance, insurtech" property="keywords">
-    <meta name="viewport" content="width=device-width, initial-scale=1" property="viewport">
-    <meta name="og:title" content="inga.ai" property="og:title">
-    <meta name="og:description" content="">
-    <meta name="og:image" content="" property="og:image">
-    <link rel="icon" href="favicon.ico">
-    <link type="text/css" rel="stylesheet" href="./res/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="./res/styles.css">
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCP10JKCCL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>inga.ai</title>
+  <meta name="description" content="Landing page for inga.ai, a causal AI startup" property="description">
+  <meta name="keywords" content="landing page, product page, startup, causal, artificial intelligence, insurance, insurtech" property="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" media="screen" href="style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NCP10JKCCL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'G-NCP10JKCCL');
-  </script>
-  <body>
-    <div class="bg-image"></div>
-    <div>
-      <div id="loading" class="loading-state" style="display: none;"></div>
-      <div>
-        <section>
-          <div class="floating-signup__wrap col-xs-12 col-md-6 col-xs-offset-0 col-md-offset-3 floaty-vertical--middle floaty-horizontal--center floaty-unfloat-at--xs">
-            <div class="floating-signup rel">
-              <div class="container-fluid rel">
-                <div class="row">
-                  <div class="user-signup__intro">
-                    <h1 style="text-align: center;"><mark>inga.ai</mark></h1>
-                    <p style="text-align: center;">
-                      <img src="/res/spacer.png" alt="" class="spacer insert--image wrap-off-align-center"><br>
-                    </p>
-                    <p style="text-align: center;">Hyper-personalised risk profiling for life insurance </p>
-                    <p style="text-align: center;">
-                      <img src="/res/clean-hr.png" alt="" class="clean-hr insert--image wrap-off-align-center">
-                      <span style="font-size: 14px;">In stealth mode. Subscribe for updates.</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <form action="https://inga.us9.list-manage.com/subscribe/post?u=92f4056707cebb498dfb2ca3f&amp;id=ba7eeede2b&amp;f_id=00980be1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div class="mt-table--full">
-                      <div class="mt-td--centered-vertical user-signup__col-1">
-                        <div class="user-signup__form-group m-lg-v form-group col-sm-12">
-                          <input type="email" name="EMAIL" class="form-control form-control__input user-signup__email" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required">
-                        </div>        
-                      </div>
-                      <div class="mt-td--centered-vertical user-signup__col-2">
-                        <div class="user-signup__form-group m-lg-v form-group text-center">
-                          <button type="submit" class="btn btn-default submit user-signup__submit"><span>SUBMIT</span></button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+  gtag('config', 'G-NCP10JKCCL');
+</script>
+<body>
+
+  <!-- particles.js container -->
+  <div>
+    <div id="particles-js">
+      <div class = "landingtext">
+        <h1 id = "sub-heading">Hyper-personalised risk profiling for life insurance</h1>
+        <br></br> 
+        <h3 id = "basic-text">Currently in stealth mode. Subscribe for updates.</h1>
+        <br></br> 
+        <div class = "form-center">
+          <form action="https://inga.us9.list-manage.com/subscribe/post?u=92f4056707cebb498dfb2ca3f&amp;id=ba7eeede2b&amp;f_id=00980be1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> 
+            <input type = "email" id = "email"  name="EMAIL" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/" placeholder="Email" aria-required="true" required="required"> </input>
+            <button type = "submit"> <span>Subscribe </span> </button> 
+          </form>
+        </div>
+        
       </div>
+      
     </div>
-  </body>
+
+  </div>
+
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script>
+  particlesJS.load('particles-js','particlesjs-config.json')
+</script> 
+
+</body>
 </html>
-
-
